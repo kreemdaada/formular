@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patientenversicherung</title>
+</head>
+<body>
+    <h2>Patientenversicherung</h2>
+    <form action="save_form_versicherung.php" method="post" enctype="multipart/form-data">
+    <label for="anrede">Anrede:</label>
+    <input type="text" id="anrede" name="anrede" required><br><br>
+
+    <label for="vollstaendigName">Vollständiger Name:</label>
+    <input type="text" id="vollstaendigName" name="vollstaendigName" required><br><br>
+
+    <label for="versicherung">Versicherung:</label>
+    <input type="text" id="versicherung" name="versicherung" required><br><br>
+
+    <label for="versicherungBild">Bild hochladen (Versicherung):</label>
+    <input type="file" id="versicherungBild" name="versicherungBild" accept="image/*" required><br><br>
+
+    <label for="bildVonPatienten">Bild hochladen (Patient):</label>
+    <input type="file" id="bildVonPatienten" name="bildVonPatienten" accept="image/*" required><br><br>
+
+    <!-- Weitere Felder für die Versicherungsdaten -->
+
+    <button type="submit">Daten speichern</button>
+</form>
+</body>
+</html>

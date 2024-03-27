@@ -1,0 +1,55 @@
+<!-- dashboard.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Fügen Sie hier Ihre CSS-Dateien oder Stile hinzu -->
+</head>
+<body>
+  <h2>Willkommen im Dashboard</h2>
+  <div class="rezept-anlegen-form">
+    <h3>Rezept anlegen</h3>
+    <form action="rezept_anlegen.php" method="post">
+      <div class="form-group">
+        <label for="patientId">Patient ID:</label>
+        <input type="text" id="patientId" name="patientId" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="medikamentName">Medikament Name:</label>
+        <input type="text" id="medikamentName" name="medikamentName" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="termin">Termin eingeben:</label>
+        <input type="datetime-local" id="termin" name="termin" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="arztId">Arzt ID:</label>
+        <input type="text" id="arztId" name="arztId" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="empfehlungApo">Empfehlung Apotheke:</label>
+        <input type="text" id="empfehlungApo" name="empfehlungApo" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="emailApo">E-Mail Apotheke:</label>
+        <input type="email" id="emailApo" name="emailApo" class="form-control" value="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="vollständigerName">Vollständiger Name:</label>
+        <input type="text" id="vollständigerName" name="vollständigerName" class="form-control" value="" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Rezept anlegen</button>
+    </form>
+  </div>
+  <!-- Hier können weitere Inhalte für das Dashboard hinzugefügt werden -->
+</body>
+</html>
