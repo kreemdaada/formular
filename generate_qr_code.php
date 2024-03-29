@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__,2) . '/config.php';
 // Daten aus dem Versicherungsformular und dem Patientenrezeptformular kombinieren (als Beispiel)
 $versicherungsDaten = array(
     'anrede' => $_POST['anrede'] ?? '',
